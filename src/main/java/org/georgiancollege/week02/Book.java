@@ -90,4 +90,13 @@ public class Book {
     public void setAvailable(boolean available) {
         isAvailable = available;
     }
+
+    // to string method
+
+    @Override
+    public String toString() {
+        return String.format("%d: The price of %s written by %s of %s " +
+                        "is %f. Availability: %s",
+                bookId, bookName, author, genre, price, isAvailable);
+    }
 }
